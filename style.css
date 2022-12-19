@@ -3,10 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   box-shadow: 4px 0px 7px #777;
+}
+
+.nav-link {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+}
+.nav-link li {
+  list-style: none;
+}
+.nav-link li a {
+  text-decoration: none;
+  color: black;
 }
