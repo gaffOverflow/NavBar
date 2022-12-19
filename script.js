@@ -1,0 +1,1 @@
+document.getElementById("textarea").innerHTML="this is a textarea"
