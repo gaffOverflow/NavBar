@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid lime;
+}
+.logo{
+  padding: 1em;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
   box-shadow: 4px 0px 7px #777;
 }
 
@@ -15,14 +18,42 @@ nav {
   display: flex;
   width: 50vw;
   justify-content: space-around;
+  background: rgba(220, 30, 4, 0.5);
+  padding: 1em;
 }
 .nav-link li {
   list-style: none;
 }
 .nav-link li a {
   text-decoration: none;
-  color: black;
+  color: #eee;
+  font-size: clamp(15px, 2vw, 40px);
+font-size: min;
 }
-main{
+body {
   width: 100vw;
+}
+h1,
+label {
+  text-align: center;
+  display: block;
+  margin: 1rem 0 0 0;
+}
+
+/* break point */
+
+@media (max-width: 500px) {
+  .nav-link {
+    flex-direction: column;
+    position: fixed;
+    inset: 0 0 0 30%;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 3rem;
+    backdrop-filter: blur(4px);
   }
+  .nav-link li {
+    padding-block: 2em;
+    
+  }
+}
