@@ -39,6 +39,11 @@ label {
   display: block;
   margin: 1rem 0 0 0;
 }
+button{
+  position: absolute;
+  right: 4rem;
+  display: none;
+}
 
 /* break point */
 
@@ -51,9 +56,21 @@ label {
     justify-content: flex-start;
     padding: 3rem;
     backdrop-filter: blur(4px);
+    transform: translateX(100%);
+    transition: .5s;
+  }
+  .nav-link[data-visible="true"]{
+    transform: translateX(0%);
+    transition: .5s;
   }
   .nav-link li {
     padding-block: 2em;
     
+  }
+  button{
+    display: block;
+    z-index: 999;
+    background: rgba(220, 30, 4, 0.1);
+    cursor: pointer;
   }
 }

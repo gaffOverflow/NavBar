@@ -12,13 +12,14 @@
       <head>
         <nav>
           <div class="logo">Logo</div>
+          <button aria-controls="navigation" aria-expanded="false">&#9776</button>
           <div>
-            <ul class="nav-link">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Service</a></li>
+            <ul class="nav-link" data-visible="false" id="navigation">
+              <li><a href="#" aria-hidden="true">Home</a></li>
+              <li><a href="#" aria-hidden="true">About</a></li>
+              <li><a href="#" aria-hidden="true">Help</a></li>
+              <li><a href="#" aria-hidden="true">Contact</a></li>
+              <li><a href="#" aria-hidden="true">Service</a></li>
             </ul>
           </div>
         </nav>
